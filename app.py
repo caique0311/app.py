@@ -7,7 +7,7 @@ from google.genai.errors import APIError
 
 # Título da Aplicação no Streamlit
 st.set_page_config(page_title="🤖 Assistente de Perguntas e Respostas com Gemini e Streamlit")
-st.title("chat ia")
+st.title("chat IA")
 st.caption("🚀 Desenvolvido com Google Gemini e Streamlit")
 
 # 🚨 SOLUÇÃO FINAL: Insere a chave que você confirmou que funciona diretamente no código.
@@ -32,7 +32,7 @@ try:
     
     # Botão para enviar a pergunta
     if st.button("Obter Resposta", type="primary") and user_prompt:
-        with st.spinner("🤖 O Gemini está pensando..."):
+        with st.spinner("🤖 chat IA está pensando..."):
             try:
                 # Chama a API do Gemini
                 response = client.models.generate_content(
@@ -41,7 +41,7 @@ try:
                 )
                 
                 # Exibe a resposta em um bloco de citação para destaque
-                st.subheader("Resposta do Gemini:")
+                st.subheader("Resposta do chat IA:")
                 st.info(response.text)
                 
             except APIError as e:
@@ -53,4 +53,5 @@ try:
 
 except Exception as e:
     # Trata erros de inicialização do cliente
+
     st.error(f"❌ Não foi possível inicializar o cliente Gemini. Por favor, verifique a chave no código: {e}")
