@@ -25,7 +25,7 @@ resposta gerada ao cliente.
 
 O arquivo `.env` contém:
 
-    GEMINI_API_KEY=AIzaSyCLxMT--3X6EAfMKCb0mGtH9ZLsJGEq3JI
+    GEMINI_API_KEY=AIzaSyCxiYpdgHSUJOA5aUoiSfAq1VgD3hxiYYY
 
 ## 5. Fluxo da Aplicação
 
@@ -76,3 +76,4 @@ Retorno:
 
     pip install flask python-dotenv requests
     python app.py
+
