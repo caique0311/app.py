@@ -12,7 +12,7 @@ st.caption("🚀 Desenvolvido com Google Gemini e Streamlit")
 
 # 🚨 SOLUÇÃO FINAL: Insere a chave que você confirmou que funciona diretamente no código.
 # SUBSTITUA "SUA_CHAVE_DE_EXEMPLO_AQUI" pelo valor da sua chave.
-CHAVE_FIXA = "AIzaSyB6sPG2eTaPVAgbfCi_VG8utIRlEkST7cU" 
+CHAVE_FIXA = "AIzaSyCxiYpdgHSUJOA5aUoiSfAq1VgD3hxiYYY" 
 
 try:
     # Inicializa o cliente da API do Gemini usando a chave fixa.
@@ -53,4 +53,5 @@ try:
 
 except Exception as e:
     # Trata erros de inicialização do cliente
+
     st.error(f"❌ Não foi possível inicializar o cliente Gemini. Por favor, verifique a chave no código: {e}")
